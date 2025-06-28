@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Perros Aleatorios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dog-container">
+        <h1>🐶 Galería de Perros Aleatorios</h1>
+        <div class="controls">
+            <select id="breed-select">
+                <option value="">Todas las razas</option>
+            </select>
+            <button id="fetch-btn">Mostrar perro</button>
+        </div>
+        <div class="img-wrapper">
+            <div class="loader" id="loader" style="display:none;"></div>
+            <img id="dog-img" src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg" alt="Perro aleatorio">
+            <button id="download-btn">Descargar imagen</button>
+        </div>
+        <div id="error-msg" class="error-msg" style="display:none;"></div>
+    </div>
+    <footer>
+        <p>Hecho con 🐾 usando <a href="https://dog.ceo/dog-api/" target="_blank">Dog CEO API</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
